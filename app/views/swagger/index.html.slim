@@ -1,0 +1,24 @@
+- content_for :stylesheet do
+  = stylesheet_link_tag "swagger/application", :media => "all"
+
+- content_for :javascript do
+  = javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"
+  = javascript_include_tag "swagger/application"
+
+body.swagger-section
+  #header
+    .swagger-ui-wrap
+      a#logo href="/"  swagger
+      form#api_selector
+        .input.icon-btn
+          img#show-pet-store-icon src=asset_path("swagger/pet_store_api.png") title=("Show Swagger Petstore Example Apis") 
+        .input.icon-btn
+          img#show-wordnik-dev-icon src=asset_path("swagger/wordnik_api.png") title=("Show Wordnik Developer Apis") 
+        .input
+          input#input_baseUrl name="baseUrl" placeholder="http://example.com/api" type="text" /
+        .input
+          input#input_apiKey name="apiKey" placeholder="api_key" type="text" /
+        .input
+          a#explore href="#"  Explore
+  #message-bar.swagger-ui-wrap &nbsp;
+  #swagger-ui-container.swagger-ui-wrap

@@ -1,0 +1,13 @@
+//= require swagger
+//= require swagger/shred.bundle
+//= require swagger/jquery.slideto.min.js
+//= require swagger/jquery.wiggle.min.js
+//= require swagger/jquery.ba-bbq.min.js
+//= require swagger/handlebars-1.0.0.js
+//= require swagger/underscore-min.js
+//= require swagger/backbone-min.js
+//= require swagger/swagger-ui.js
+//= require swagger/highlight.7.3.pack.js
+//= require swagger/swagger-client.js
+//= require swagger/swagger.js
+//= require swagger/swagger-oauth.js
